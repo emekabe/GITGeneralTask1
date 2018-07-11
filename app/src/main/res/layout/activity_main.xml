@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="33dp">
+
+        <TextView
+            android:id="@+id/headerTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="02dp"
+            android:text="To Do List"
+            android:textAlignment="center"
+            android:textColor="#7777FF"
+            android:textSize="70dp" />
+
+        <TextView
+            android:id="@+id/AITextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="What would you \nlike to do?"
+            android:textAlignment="center"
+            android:textColor="#7777FF"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/userInput"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="#DDDDFF"
+            android:hint="type here e.g Eat, drink, get drunk, etc."
+            android:inputType="text"
+            android:paddingLeft="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:onClick="addTask1"
+                android:text="ADD"
+                android:textSize="24dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:onClick="removealltasks"
+                android:text="CLEAR"
+                android:textSize="24dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:onClick="stats"
+                android:text="STATUS"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+
+
+        <!-- The list part -->
+
+        <!--Task 1-->
+        <LinearLayout
+            android:id="@+id/task1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/task1TextCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Me" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="removetask1"
+                android:text="REMOVE" />
+
+
+        </LinearLayout>
+
+        <!--Task 2-->
+        <LinearLayout
+            android:id="@+id/task2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/task2TextCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Me" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="removetask2"
+                android:text="REMOVE" />
+
+
+        </LinearLayout>
+
+        <!--Task 3-->
+        <LinearLayout
+            android:id="@+id/task3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/task3TextCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Me" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="removetask3"
+                android:text="REMOVE" />
+
+
+        </LinearLayout>
+
+        <!--Task 4-->
+        <LinearLayout
+            android:id="@+id/task4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/task4TextCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Me" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="removetask4"
+                android:text="REMOVE" />
+
+
+        </LinearLayout>
+
+        <!--Task 5-->
+        <LinearLayout
+            android:id="@+id/task5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/task5TextCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Me" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="removetask5"
+                android:text="REMOVE" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
